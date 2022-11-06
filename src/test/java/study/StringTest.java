@@ -17,7 +17,7 @@ public class StringTest {
     @Test
     void split_1() {
         String[] actual = "1,2".split(",");
-        assertThat(actual).contains("1","2");
+        assertThat(actual).containsExactly("1","2");
     }
 
     @Test
